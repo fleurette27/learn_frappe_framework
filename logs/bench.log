@@ -160,3 +160,4 @@
 2024-09-09 11:07:00,742 INFO /usr/local/bin/bench serve --port 8000
 2024-09-09 11:09:07,040 INFO /usr/local/bin/bench start
 2024-09-09 11:18:57,611 INFO /usr/local/bin/bench start
+2024-09-09 12:00:01,564 INFO /usr/local/bin/bench --verbose --site all backup

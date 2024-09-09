@@ -44,3 +44,22 @@ Backup Summary for library.localhost at 2024-09-06 18:00:05.185853
 Config  : ./library.localhost/private/backups/20240906_180004-library_localhost-site_config_backup.json 94.0B
 Database: ./library.localhost/private/backups/20240906_180004-library_localhost-database.sql.gz         243.6KiB
 Backup for Site library.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_bdb642048cb485b2 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _bdb642048cb485b2 | /usr/bin/gzip >> ./dcode.com/private/backups/20240909_163002-dcode_com-database.sql.gz
+
+Backup Summary for dcode.com at 2024-09-09 16:30:04.855358
+Config  : ./dcode.com/private/backups/20240909_163002-dcode_com-site_config_backup.json 94.0B
+Database: ./dcode.com/private/backups/20240909_163002-dcode_com-database.sql.gz         731.2KiB
+Backup for Site dcode.com has been successfully completed
+File ./library.localhost/private/backups/20240906_120004-library_localhost-database.sql.gz is older than 24 hours
+File ./library.localhost/private/backups/20240906_180004-library_localhost-site_config_backup.json is older than 24 hours
+File ./library.localhost/private/backups/20240906_084738-library_localhost-database.sql.gz is older than 24 hours
+File ./library.localhost/private/backups/20240905_180005-library_localhost-site_config_backup.json is older than 24 hours
+File ./library.localhost/private/backups/20240906_120004-library_localhost-site_config_backup.json is older than 24 hours
+File ./library.localhost/private/backups/20240906_084738-library_localhost-site_config_backup.json is older than 24 hours
+File ./library.localhost/private/backups/20240906_180004-library_localhost-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_e94e7a436396a734 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _e94e7a436396a734 | /usr/bin/gzip >> ./library.localhost/private/backups/20240909_120004-library_localhost-database.sql.gz
+
+Backup Summary for library.localhost at 2024-09-09 12:00:05.512120
+Config  : ./library.localhost/private/backups/20240909_120004-library_localhost-site_config_backup.json 94.0B
+Database: ./library.localhost/private/backups/20240909_120004-library_localhost-database.sql.gz         255.6KiB
+Backup for Site library.localhost has been successfully completed
