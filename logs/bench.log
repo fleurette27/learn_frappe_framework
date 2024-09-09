@@ -1,0 +1,162 @@
+2024-09-05 12:58:46,721 DEBUG cd frappe-bench && python3.11 -m venv env
+2024-09-05 12:58:49,730 DEBUG cd frappe-bench && /home/fleurette/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-09-05 12:58:53,591 DEBUG cd frappe-bench && /home/fleurette/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-09-05 12:58:56,497 LOG Getting frappe
+2024-09-05 12:58:56,497 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-09-05 12:59:00,812 LOG Installing frappe
+2024-09-05 12:59:00,812 DEBUG cd /home/fleurette/frappe-bench && /home/fleurette/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/fleurette/frappe-bench/apps/frappe 
+2024-09-05 13:00:45,407 DEBUG cd /home/fleurette/frappe-bench/apps/frappe && yarn install --check-files
+2024-09-05 13:01:37,033 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-05 13:01:37,034 DEBUG cd frappe-bench && bench build
+2024-09-05 13:01:37,160 INFO /usr/local/bin/bench build
+2024-09-05 13:02:01,339 LOG setting up backups
+2024-09-05 13:02:01,358 LOG backups were set up
+2024-09-05 13:02:01,358 INFO Bench frappe-bench initialized
+2024-09-05 13:07:21,225 INFO /usr/local/bin/bench start
+2024-09-05 13:07:21,570 INFO /usr/local/bin/bench worker
+2024-09-05 13:07:21,575 INFO /usr/local/bin/bench schedule
+2024-09-05 13:07:21,587 INFO /usr/local/bin/bench serve --port 8000
+2024-09-05 13:07:21,696 INFO /usr/local/bin/bench watch
+2024-09-05 13:13:00,408 INFO /usr/local/bin/bench new-site dcode.com
+2024-09-05 13:14:18,153 INFO /usr/local/bin/bench --site dcode.com add-to-hosts
+2024-09-05 13:16:08,973 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-09-05 13:16:49,125 INFO /usr/local/bin/bench get-app erpnext --branch version-15
+2024-09-05 13:16:49,880 LOG Getting erpnext
+2024-09-05 13:16:49,881 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-09-05 13:16:55,259 LOG Installing erpnext
+2024-09-05 13:16:55,259 DEBUG cd /home/fleurette/frappe-bench && /home/fleurette/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/fleurette/frappe-bench/apps/erpnext 
+2024-09-05 13:17:16,994 DEBUG cd /home/fleurette/frappe-bench/apps/erpnext && yarn install --check-files
+2024-09-05 13:17:18,611 DEBUG bench build --app erpnext
+2024-09-05 13:17:18,773 INFO /usr/local/bin/bench build --app erpnext
+2024-09-05 13:17:22,365 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-05 13:18:01,163 INFO /usr/local/bin/bench start
+2024-09-05 13:18:01,738 INFO /usr/local/bin/bench serve --port 8000
+2024-09-05 13:18:01,772 INFO /usr/local/bin/bench schedule
+2024-09-05 13:18:01,820 INFO /usr/local/bin/bench watch
+2024-09-05 13:18:01,840 INFO /usr/local/bin/bench worker
+2024-09-05 13:18:45,264 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-09-05 13:25:03,472 INFO /usr/local/bin/bench --site dcode.com install-app erpnext
+2024-09-05 13:25:16,668 INFO /usr/local/bin/bench --site dcode.com migrate
+2024-09-05 13:38:39,787 INFO /usr/local/bin/bench start
+2024-09-05 13:38:40,120 INFO /usr/local/bin/bench schedule
+2024-09-05 13:38:40,160 INFO /usr/local/bin/bench watch
+2024-09-05 13:38:40,175 INFO /usr/local/bin/bench worker
+2024-09-05 13:38:40,187 INFO /usr/local/bin/bench serve --port 8000
+2024-09-05 15:18:27,134 INFO /usr/local/bin/bench start
+2024-09-05 15:18:27,495 INFO /usr/local/bin/bench worker
+2024-09-05 15:18:27,504 INFO /usr/local/bin/bench schedule
+2024-09-05 15:18:27,550 INFO /usr/local/bin/bench watch
+2024-09-05 15:18:27,564 INFO /usr/local/bin/bench serve --port 8000
+2024-09-05 16:21:00,372 INFO /usr/local/bin/bench start
+2024-09-05 16:21:00,660 INFO /usr/local/bin/bench serve --port 8000
+2024-09-05 16:21:00,673 INFO /usr/local/bin/bench schedule
+2024-09-05 16:21:00,678 INFO /usr/local/bin/bench worker
+2024-09-05 16:21:00,682 INFO /usr/local/bin/bench watch
+2024-09-05 16:33:53,253 INFO /usr/local/bin/bench reinstall {site} --yes
+2024-09-05 16:35:23,502 INFO /usr/local/bin/bench reinstall
+2024-09-05 16:36:37,730 INFO /usr/local/bin/bench reinstall --site dcode.com
+2024-09-05 16:37:04,769 INFO /usr/local/bin/bench reinstall dcode.com
+2024-09-05 16:42:48,783 INFO /usr/local/bin/bench reinstall --help
+2024-09-05 16:43:19,717 INFO /usr/local/bin/bench reinstall --yes
+2024-09-05 16:43:41,797 INFO /usr/local/bin/bench reinstall --yes
+2024-09-05 16:44:18,966 INFO /usr/local/bin/bench reinstall --yes --site dcode.com
+2024-09-05 16:44:48,333 INFO /usr/local/bin/bench install
+2024-09-05 16:46:00,374 INFO /usr/local/bin/bench install prerequisites
+2024-09-05 16:46:00,374 WARNING superuser privileges required for this command
+2024-09-05 16:48:19,816 INFO /usr/local/bin/bench start
+2024-09-05 16:48:20,112 INFO /usr/local/bin/bench schedule
+2024-09-05 16:48:20,141 INFO /usr/local/bin/bench serve --port 8000
+2024-09-05 16:48:20,153 INFO /usr/local/bin/bench watch
+2024-09-05 16:48:20,222 INFO /usr/local/bin/bench worker
+2024-09-05 17:13:32,135 INFO /usr/local/bin/bench start
+2024-09-05 17:13:32,655 INFO /usr/local/bin/bench worker
+2024-09-05 17:13:32,688 INFO /usr/local/bin/bench schedule
+2024-09-05 17:13:32,772 INFO /usr/local/bin/bench serve --port 8000
+2024-09-05 17:13:32,843 INFO /usr/local/bin/bench watch
+2024-09-05 17:14:23,827 INFO /usr/local/bin/bench new-app library_management
+2024-09-05 17:14:23,831 LOG creating new app library_management
+2024-09-05 17:15:11,743 LOG Installing library_management
+2024-09-05 17:15:11,745 DEBUG cd /home/fleurette/frappe-bench && /home/fleurette/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/fleurette/frappe-bench/apps/library_management 
+2024-09-05 17:15:14,062 DEBUG bench build --app library_management
+2024-09-05 17:15:14,172 INFO /usr/local/bin/bench build --app library_management
+2024-09-05 17:15:15,788 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-05 17:15:52,305 INFO /usr/local/bin/bench new-site library.localhost
+2024-09-05 17:16:58,311 INFO /usr/local/bin/bench --site dcode.com list-apps
+2024-09-05 17:17:43,612 INFO /usr/local/bin/bench --site library.localhost install-app library_management
+2024-09-05 17:17:59,949 INFO /usr/local/bin/bench use library.localhost
+2024-09-05 17:18:11,229 INFO /usr/local/bin/bench add-to-hosts
+2024-09-05 17:18:41,319 INFO /usr/local/bin/bench start
+2024-09-05 17:18:41,656 INFO /usr/local/bin/bench worker
+2024-09-05 17:18:41,656 INFO /usr/local/bin/bench schedule
+2024-09-05 17:18:41,692 INFO /usr/local/bin/bench serve --port 8000
+2024-09-05 17:18:41,762 INFO /usr/local/bin/bench watch
+2024-09-05 18:00:02,134 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-06 08:04:36,881 INFO /usr/local/bin/bench start
+2024-09-06 08:04:37,236 INFO /usr/local/bin/bench watch
+2024-09-06 08:04:37,243 INFO /usr/local/bin/bench serve --port 8000
+2024-09-06 08:04:37,244 INFO /usr/local/bin/bench schedule
+2024-09-06 08:04:37,436 INFO /usr/local/bin/bench worker
+2024-09-06 08:36:45,594 INFO /usr/local/bin/bench --site library.localhost console
+2024-09-06 08:42:52,225 INFO /usr/local/bin/bench --site library.localhost mariadb
+2024-09-06 08:47:37,864 INFO /usr/local/bin/bench --site library.localhost backup
+2024-09-06 08:49:44,653 INFO /usr/local/bin/bench --help
+2024-09-06 08:53:49,392 INFO /usr/local/bin/bench set-config -g developer_mode true
+2024-09-06 08:55:09,649 INFO /usr/local/bin/bench start
+2024-09-06 08:55:10,089 INFO /usr/local/bin/bench watch
+2024-09-06 08:55:10,147 INFO /usr/local/bin/bench schedule
+2024-09-06 08:55:10,174 INFO /usr/local/bin/bench serve --port 8000
+2024-09-06 08:55:10,342 INFO /usr/local/bin/bench worker
+2024-09-06 09:48:13,707 INFO /usr/local/bin/bench --site library.localhost mariadb
+2024-09-06 12:00:01,661 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-06 12:06:49,026 INFO /usr/local/bin/bench set-config -g server_script_enabled true
+2024-09-06 12:06:59,701 INFO /usr/local/bin/bench start
+2024-09-06 12:07:00,100 INFO /usr/local/bin/bench serve --port 8000
+2024-09-06 12:07:00,102 INFO /usr/local/bin/bench worker
+2024-09-06 12:07:00,182 INFO /usr/local/bin/bench watch
+2024-09-06 12:07:00,305 INFO /usr/local/bin/bench schedule
+2024-09-06 15:19:56,524 INFO /usr/local/bin/bench set-config -g server_script_enabled true
+2024-09-06 15:20:19,678 INFO /usr/local/bin/bench start
+2024-09-06 15:20:20,067 INFO /usr/local/bin/bench schedule
+2024-09-06 15:20:20,096 INFO /usr/local/bin/bench serve --port 8000
+2024-09-06 15:20:20,145 INFO /usr/local/bin/bench worker
+2024-09-06 15:20:20,254 INFO /usr/local/bin/bench watch
+2024-09-06 15:20:31,368 INFO /usr/local/bin/bench --site library.localhost mariadb
+2024-09-06 18:00:01,384 INFO /usr/local/bin/bench --verbose --site all backup
+2024-09-06 18:02:14,448 INFO /usr/local/bin/bench start
+2024-09-06 18:02:14,866 INFO /usr/local/bin/bench serve --port 8000
+2024-09-06 18:02:14,924 INFO /usr/local/bin/bench schedule
+2024-09-06 18:02:14,961 INFO /usr/local/bin/bench watch
+2024-09-06 18:02:14,986 INFO /usr/local/bin/bench worker
+2024-09-09 08:15:36,880 INFO /usr/local/bin/bench start
+2024-09-09 08:15:37,446 INFO /usr/local/bin/bench serve --port 8000
+2024-09-09 08:15:37,477 INFO /usr/local/bin/bench schedule
+2024-09-09 08:15:37,482 INFO /usr/local/bin/bench worker
+2024-09-09 08:15:37,484 INFO /usr/local/bin/bench watch
+2024-09-09 10:19:00,277 INFO /usr/local/bin/bench start
+2024-09-09 10:19:15,105 INFO /usr/local/bin/bench start
+2024-09-09 10:19:37,177 INFO /usr/local/bin/bench restart
+2024-09-09 10:19:37,231 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-09 10:20:01,876 INFO /usr/local/bin/bench restart
+2024-09-09 10:20:01,919 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-09 10:26:47,324 INFO /usr/local/bin/bench start
+2024-09-09 10:32:33,409 INFO /usr/local/bin/bench start
+2024-09-09 10:32:33,734 INFO /usr/local/bin/bench watch
+2024-09-09 10:32:33,768 INFO /usr/local/bin/bench schedule
+2024-09-09 10:32:33,825 INFO /usr/local/bin/bench worker
+2024-09-09 10:32:33,862 INFO /usr/local/bin/bench serve --port 8000
+2024-09-09 10:42:23,232 INFO /usr/local/bin/bench start
+2024-09-09 10:43:31,319 INFO /usr/local/bin/bench start
+2024-09-09 10:48:31,269 INFO /usr/local/bin/bench start
+2024-09-09 10:48:31,610 INFO /usr/local/bin/bench watch
+2024-09-09 10:48:31,633 INFO /usr/local/bin/bench schedule
+2024-09-09 10:48:31,636 INFO /usr/local/bin/bench serve --port 8000
+2024-09-09 10:48:31,639 INFO /usr/local/bin/bench worker
+2024-09-09 10:50:35,739 INFO /usr/local/bin/bench restart
+2024-09-09 10:50:35,781 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-09 11:07:00,283 INFO /usr/local/bin/bench start
+2024-09-09 11:07:00,585 INFO /usr/local/bin/bench watch
+2024-09-09 11:07:00,587 INFO /usr/local/bin/bench schedule
+2024-09-09 11:07:00,590 INFO /usr/local/bin/bench worker
+2024-09-09 11:07:00,742 INFO /usr/local/bin/bench serve --port 8000
+2024-09-09 11:09:07,040 INFO /usr/local/bin/bench start
+2024-09-09 11:18:57,611 INFO /usr/local/bin/bench start

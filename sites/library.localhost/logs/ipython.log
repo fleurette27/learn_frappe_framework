@@ -1,0 +1,4 @@
+2024-09-06 08:42:38,159 INFO ipython === bench console session ===
+2024-09-06 08:42:38,159 INFO ipython print("Hello Fleurette")
+2024-09-06 08:42:38,159 INFO ipython bench --site library.localhost mariadb
+2024-09-06 08:42:38,159 INFO ipython === session end ===

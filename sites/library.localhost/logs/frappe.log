@@ -1,0 +1,6 @@
+2024-09-06 18:01:50,065 ERROR frappe New Exception collected in error log
+Site: library.localhost
+Form Dict: {'doc': '{"name":"LT00001","owner":"Administrator","creation":"2024-09-06 18:01:42.852340","modified":"2024-09-06 18:01:42.852340","modified_by":"Administrator","docstatus":0,"idx":0,"amended_from":null,"article":"Parfum","membre_de_la_bibliothèque":"1M00001","type":"Issue","date":"2024-09-06","doctype":"Library Transaction","__last_sync_on":"2024-09-06T17:01:42.929Z"}', 'action': 'Submit', 'cmd': 'frappe.desk.form.save.savedocs'}
+2024-09-06 18:02:25,882 ERROR frappe New Exception collected in error log
+Site: library.localhost
+Form Dict: {'doc': '{"name":"LT00001","owner":"Administrator","creation":"2024-09-06 18:01:42.852340","modified":"2024-09-06 18:01:42.852340","modified_by":"Administrator","docstatus":0,"idx":0,"amended_from":null,"article":"Parfum","membre_de_la_bibliothèque":"1M00001","type":"Issue","date":"2024-09-06","doctype":"Library Transaction","__last_sync_on":"2024-09-06T17:01:42.929Z"}', 'action': 'Submit', 'cmd': 'frappe.desk.form.save.savedocs'}

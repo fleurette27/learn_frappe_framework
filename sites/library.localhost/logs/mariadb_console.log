@@ -1,0 +1,11 @@
+_HiStOrY_V2_
+select\040name\040from\040'tabUser';
+select\040name\040from\040tabUser;
+desc\040tabArticle;
+select\040*\040from\040tabArticle;
+select\040*\040from\040tabLibraryMember;
+select\040*\040from\040tabLibrary\040Member;
+select\040*\040from\040'tabLibrary\040Member';
+show\040table
+ggg
+exit
